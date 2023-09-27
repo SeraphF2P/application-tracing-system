@@ -2,14 +2,13 @@ import useClickOutside from "../../hooks/useClickOutside";
 import Btn, { BtnProps } from "./Btn";
 import {
 	ComponentProps,
+	ElementType,
 	PropsWithChildren,
 	ReactNode,
 	createContext,
 	useContext,
 	useRef,
 	useState,
-	ElementType,
-	useEffect,
 } from "react";
 import { createPortal } from "react-dom";
 
@@ -60,7 +59,7 @@ const Close = ({ children, onClick, ...props }: BtnProps) => {
 	return (
 		<Btn
 			{...props}
-			onClick={(e) => {
+			onClick={() => {
 				setIsOpen(false);
 			}}
 		>

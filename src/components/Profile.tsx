@@ -1,8 +1,4 @@
-import useCustomQuestion, {
-	customQuestionType,
-} from "../hooks/useCustomQuestion";
-import AddQuestion from "./AddQuestion";
-import { Card, FieldWithSwitch, Icons, Question } from "./ui";
+import { Card, FieldWithSwitch } from "./ui";
 import { FC } from "react";
 
 interface ProfileProps {}

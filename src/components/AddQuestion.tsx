@@ -1,11 +1,10 @@
 import {
-	createQuestionType,
 	questionsOpts,
 	questionsOptsType,
 	questionType,
 } from "../hooks/useCustomQuestion";
 import { Additions } from "./Additions";
-import { Card, CardStyle, Icons, Modale } from "./ui";
+import { CardStyle, Icons, Modale } from "./ui";
 import Btn, { BtnProps } from "./ui/Btn";
 import { ComponentProps, FormEvent, useId, useState } from "react";
 
