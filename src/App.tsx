@@ -10,10 +10,11 @@ import axiosClient from "./lib/axiosClient";
 import { useMutation } from "@tanstack/react-query";
 
 function App() {
-	const { data, mutate } = useMutation({
+	const { mutate } = useMutation({
 		mutationKey: ["alldata"],
 		mutationFn: () => {
 			const data = getAllData();
+			console.log(data);
 			return axiosClient.post(
 				`734.8250997795502/programs/neque/application-form`,
 				data
